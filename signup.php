@@ -25,7 +25,7 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-warning text-center mb-5">Create an account</h2>
+              <h2 class="text-uppercase  text-info text-center mb-5">Create an account</h2>
 
               <form action="scripts.php" method="POST" name="signupform" id="mysignupform" data-parsley-validate >
 
@@ -62,7 +62,7 @@
 
                 <div class="d-flex justify-content-center">
                   <button type="submit" name="saveuser"
-                    class="btn btn-warning btn-block btn-lg gradient-custom-4 text-body" id="signup-btn" >Sign up</button>
+                    class="btn  btn-info btn-block btn-lg gradient-custom-4 text-light" id="signup-btn" >Sign up</button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="index.php"

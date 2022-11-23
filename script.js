@@ -32,7 +32,14 @@ function clearform(){
     document.forms['form_add_book'].reset();
 }
 
-
+function showinfo(id){
+    document.getElementById("book-title-lend").value=document.getElementById(id).getAttribute("title");
+    document.getElementById("book-autor-lend").value=document.getElementById(id).getAttribute("autor");
+    document.getElementById("book-category-lend").value=document.getElementById(id).getAttribute("category");
+    document.getElementById("book-lender").value=document.getElementById(id).getAttribute("lender");
+    document.getElementById("periodlend").value=document.getElementById(id).getAttribute("period");
+    document.getElementById("book-id-lend").value = id;
+}
 
 
 

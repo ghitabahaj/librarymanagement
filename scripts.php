@@ -9,6 +9,7 @@
     if(isset($_POST['updatebook']))               updateBook();
     if(isset($_POST['deletebook']))               deleteBook();
     if(isset($_POST['lendbook']))                 lendBook();
+    if(isset($_POST['deletelended']))               deletelended();
 
     function saveUser(){
     $username = $_POST['username1'];
@@ -90,6 +91,20 @@ function lendBook(){
       $_SESSION['message'] = "Book has been lended successfully !";
       header('location:books.php');
     }
+
+  }
+
+
+  function deletelended(){
+    $id = $_POST['idlended'];
+    global $con;
+
+  $sql = "DELETE FROM lendedb WHERE idl=$id";
+  if (mysqli_query($con, $sql)) {
+    $_SESSION['message'] = "Book has been deleted successfully !";
+    header('location:lended.php');
+    }
+
 
   }
 

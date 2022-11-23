@@ -28,17 +28,17 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center text-warning mb-5">Log in here</h2>
+              <h2 class="text-uppercase text-center text-info mb-5">Log in here</h2>
 
               <form action="login.php" method="POST">
               <?php if (isset($_SESSION['dataInvalid'])): ?>
 				<div class="alert alert-danger alert-dismissible fade show">
-				<strong>Oops ! </strong>
+				<strong>Oops !</strong>
 					<?php 
 						echo $_SESSION['dataInvalid']; 
 						unset($_SESSION['dataInvalid']);
 					?>
-					<button type="button" class="btn-close" data-bs-dismiss="alert"></span>
+					<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
 				</div>
 			<?php endif ?>
                 <div class="form-outline mb-4">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <button type="submit"
-                    class="btn btn-warning btn-block btn-lg gradient-custom-4 text-body" name="login">Login</button>
+                    class="btn btn-info text-light btn-block btn-lg gradient-custom-4" name="login">Login</button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0 ">D'ont have an account yet? <a href="signup.php"
